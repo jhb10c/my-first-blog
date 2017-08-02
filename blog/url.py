@@ -9,3 +9,6 @@ urlpatterns = [
 
 
 ]
+
+'''url(r'^$', views.post_list, name='post_list') assigns a view called post_list
+to  the URL ^$, which is the empty string.'''
