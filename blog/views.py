@@ -53,5 +53,5 @@ def post_delete(request, pk):
     return redirect('post_list')
 
 def post_list_draft(request):
-    posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
+    posts = Post.objects.filter(published_date__isnull=True)
     return render(request, 'blog/post_draft_list.html', {'posts': posts})
