@@ -10,13 +10,10 @@
     <body>
         <div class="page-header">
             {% if user.is_authenticated %}     
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-                
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>    
+                <a href="{% url 'post_draft_list' %}" class="top-menu">unpub</a>
             {% endif %}    
-            {% if user.is_authenticated %}     
-                <a href="{% url 'post_draft' %}" class="top-menu">unpub</a>
-                
-            {% endif %}   
+            
             
             <h1><a href="/">topology xor data</a></h1>
         </div>
